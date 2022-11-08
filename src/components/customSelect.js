@@ -12,9 +12,8 @@ const customStyles = {
       height: '40px',
       backgroundColor: '#F8F8F8',
       display: 'flex',
-      '@media(max-width:500px)': {
-        height: '40px',
-        width: '260px',
+      '@media(max-width:1200px)': {
+        width: '100%',
       }
     }),
     singleValue: (provided, state) => {
