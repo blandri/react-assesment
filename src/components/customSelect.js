@@ -8,10 +8,14 @@ const customStyles = {
     }),
     control: () => ({
       // none of react-select's styles are passed to <Control />
-      width: '538px',
+      width: '410px',
       height: '40px',
       backgroundColor: '#F8F8F8',
-      display: 'flex'
+      display: 'flex',
+      '@media(max-width:500px)': {
+        height: '40px',
+        width: '260px',
+      }
     }),
     singleValue: (provided, state) => {
       const opacity = state.isDisabled ? 0.5 : 1;

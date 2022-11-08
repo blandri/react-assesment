@@ -4,7 +4,7 @@ import React from "react";
 
 export const Header = () => {
  return (
-      <AppBar elevation={0} sx={{height: '116px', display: 'flex', justifyContent: 'center'}}>
+      <AppBar elevation={0} sx={{height: '85px', display: 'flex', justifyContent: 'center'}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -13,9 +13,12 @@ export const Header = () => {
             aria-label="menu"
             sx={{ mr: 2, color: 'primary.text' }}
           >
-            <Close sx={{fontSize: '36px'}}/>
+            <Close sx={{fontSize: {
+              xs: '20px',
+              lg: '28px'
+            }}}/>
           </IconButton>
-          <Typography variant="h6" fontSize={36} sx={{color: 'primary.text'}} >
+          <Typography variant="h5" fontSize={{xs: 20, lg: 28}} sx={{color: 'primary.text'}} >
             New Transhipment Entry
           </Typography>
         </Toolbar>
