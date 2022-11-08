@@ -78,7 +78,7 @@ export default function AddHandlerModal({open, setOpen}) {
                 </FormControl>
                 <FormControl>
                     <Typography>Phone Number</Typography>
-                    <TextField placeholder="Enter handler's phone number" variant="outlined" sx={textFieldStyles} />
+                    <TextField placeholder="Enter handler's Phone number" variant="outlined" sx={textFieldStyles} />
                 </FormControl>
                 <Button variant="contained" sx={{color: 'white', width: '97px',height: '36px', borderRadius: '5px'}}>ADD</Button>
             </Stack>
